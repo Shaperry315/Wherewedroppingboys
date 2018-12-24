@@ -5,31 +5,20 @@
 
 body {
 	background-color: black;
-
-
-
+  color: white;
 }
 
 header {
-	
 	background-image: url('../images/background.jpg');
 	background-size: cover;
-  	text-align: center;
-  	font-family: Concert One;
-  	color: white;
-  	margin: auto;
-  	height: 800px;
-  	width:	fill ;
-  	-webkit-text-stroke: 1px purple;
+	text-align: center;
+	font-family: Concert One;
+	color: white;
+	margin: auto;
+	height: 800px;
+	width:	fill ;
+	-webkit-text-stroke: 1px purple;
 
-}
-
-#logo {
-
-    text-align: center;
-    font-family: Concert One;
-    color: black;
-    -webkit-text-stroke: 1px skyblue;
 }
 
 input[type=text] {
@@ -41,6 +30,13 @@ input[type=text] {
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
     width: 25%;
+}
+
+#logo {
+    text-align: center;
+    font-family: Concert One;
+    color: black;
+    -webkit-text-stroke: 1px skyblue;
 }
 
 #stats-table {
@@ -61,45 +57,43 @@ input[type=text]:focus {
   position: relative;
 }
 
-
 #stats-table .stats:nth-child(1) {
+  border-radius: 5px 0 0 5px;        
   -moz-border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;        
 }
 
 #stats-table .stats:nth-child(4) {
+  border-radius: 0 5px 5px 0;        
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;        
 }
 
 /* --------------- */ 
-
 #stats-table h3 {
   font-size: 20px;
   font-weight: normal;
   padding: 20px;
   margin: -20px -20px 50px -20px;
   background-color: #eee;
+  background-image: linear-gradient(#fff, #eee);
   background-image: -moz-linear-gradient(#fff,#eee);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
   background-image: -webkit-linear-gradient(#fff, #eee);
   background-image: -o-linear-gradient(#fff, #eee);
   background-image: -ms-linear-gradient(#fff, #eee);
-  background-image: linear-gradient(#fff, #eee);
 }
 
 #stats-table .stats:nth-child(1) h3 {
+  border-radius: 5px 0 0 0;       
   -moz-border-radius: 5px 0 0 0;
   -webkit-border-radius: 5px 0 0 0;
-  border-radius: 5px 0 0 0;       
 }
 
 #stats-table .stats:nth-child(4) h3 {
+  border-radius: 0 5px 0 0;       
   -moz-border-radius: 0 5px 0 0;
   -webkit-border-radius: 0 5px 0 0;
-  border-radius: 0 5px 0 0;       
 } 
 
 #stats-table h3 span {
@@ -111,16 +105,15 @@ input[type=text]:focus {
   height: 100px;
   width: 100px;
   margin: 10px auto -65px;
+  border-radius: 100px;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
-  border-radius: 100px;
+  box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
   -moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
   -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-  box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
 }
 
 /* --------------- */
-
 #stats-table ul {
   margin: 20px 0 0 0;
   padding: 0;

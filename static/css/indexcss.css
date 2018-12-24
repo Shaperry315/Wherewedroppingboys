@@ -1,29 +1,11 @@
 @font-face {
-    font-family: Concert One;
+    font-family: "Concert One";
     src: url('../fonts/concertone.ttf');
 }
 
 body {
 	background-color: black;
-
-
-
-}
-
-#logo {
-	
-	background-image: url('../images/background.jpg');
-	background-size: cover;
-  	text-align: center;
-  	font-family: Concert One;
-  	color: black;
-  	margin: auto;
-  	height: 800px;
-  	width:	fill ;
-  	-webkit-text-stroke: 1px skyblue;
-
-
-
+  color: white;
 }
 
 input[type=text] {
@@ -38,5 +20,17 @@ input[type=text]:focus {
 }
 
 footer {
-    color:white;
+    color: white;
+}
+
+#logo {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  text-align: center;
+  font-family: "Concert One";
+  color: black;
+  margin: auto;
+  height: 800px;
+  /*width:  fill ;*/
+  -webkit-text-stroke: 1px skyblue;
 }
