@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet" />
+		<link href="{{ url_for('static',filename='css/indexcss.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ url_for('static',filename='images/tabBus.png') }}" rel="icon" />
+
+		<title>Where We Droppin Boys</title>
+
+		<script src="{{ url_for('static',filename='js/indexjavascript.js') }}"> </script>
+	</head>
+
+	<body>
+		<header id ="logo">
+			<img src="{{ url_for('static',filename='images/logoBus.ico') }}" width="150px" alt="" />
+
+			<h1>Where We Droppin Boys</h1>
+
+			<div id="root"></div>
+
+			<form action="searchresults.html" method="get">			
+				<input type="text" name="epic-nickname" results=5 placeholder="Player Name" />
+
+				<select id="platforms">
+					<option>Pick A Platform</option>
+					<option name="pc">PC</option>
+					<option name="xb1">Xbox</option>
+					<option name="psn">Playstation</option>
+				</select>
+				
+				<button id="entry">Search</button>
+			</form>
+		</header>
+	</body>
+</html>

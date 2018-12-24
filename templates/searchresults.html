@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet" />
+            <link href="{{ url_for('static',filename='css/indexcss.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ url_for('static',filename='images/tabBus.png') }}" rel="icon" />
+
+            <title>Where We Droppin Boys</title>
+            
+            <script src="{{ url_for('static',filename='js/indexjavascript.js') }}"> </script>
+        </head>
+
+        <body>
+            <header>
+                <div id ="logo">
+                    <img src="{{ url_for('static',filename='images/logoBus.ico') }}" width="150px" alt="" />
+                    <h1>Where We Droppin Boys</h1>
+                </div>
+
+                <div id="stats-table">
+                    <div class="stats">
+                        <h3><span>SOLO</span></h3>       
+                        <ul>
+                        <li><b>Wins:</b> [Displays Wins]</li>
+                        <li><b>Win %:</b> [Displays Win Percentage]</li>
+                        <li><b>Kills:</b> [Displays Kills]</li>
+                        <li><b>K/D:</b> [Displays K/D]</li>			
+                        </ul> 
+                    </div>
+                    <div class="stats">
+                        <h3><span>DUO</span></h3>        
+                        <ul>
+                        <li><b>Wins:</b> [Displays Wins]</li>
+                        <li><b>Win %:</b> [Displays Win Percentage]</li>
+                        <li><b>Kills:</b> [Displays Kills]</li>
+                        <li><b>K/D:</b> [Displays K/D]</li>      		
+                        </ul>    
+                    </div>
+                    <div class="stats">
+                        <h3><span>SQUAD</span></h3>
+                        <ul>
+                        <li><b>Wins:</b> [Displays Wins]</li>
+                        <li><b>Win %:</b> [Displays Win Percentage]</li>
+                        <li><b>Kills:</b> [Displays Kills]</li>
+                        <li><b>K/D:</b> [Displays K/D]</li>          		
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </body>
+</html>
